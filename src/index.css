@@ -1,0 +1,214 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* =========================================
+   🌗 FROSTBYTE THEME (Hex colors)
+   ========================================= */
+
+/* Light theme (default) */
+:root {
+    --color-bg: #F8FAFC;
+    --color-bg-secondary: #EFF6FF;
+    --color-card: #FFFFFF;
+    --color-text: #0F172A;
+    --color-text-secondary: #475569;
+    --color-primary: #3B82F6;
+    --color-primary-hover: #2563EB;
+    --color-primary-focus: #1E40AF;
+    --color-accent: #06B6D4;
+    --color-accent-hover: #0891B2;
+    --color-border: #E2E8F0;
+    --color-muted: #94A3B8;
+    --color-link: #2563EB;
+    --shadow: 0 4px 12px rgba(2, 6, 23, 0.05);
+    --navbar-bg: rgba(255, 255, 255, 0.7);
+    --navbar-text: var(--color-text);
+    --navbar-hover: var(--color-primary-hover);
+    --navbar-active: var(--color-primary);
+    --navbar-border: rgba(226, 232, 240, 0.6);
+}
+
+/* Dark theme */
+.dark {
+    --color-bg: #0F172A;
+    --color-bg-secondary: #0B1220;
+    --color-card: #1E293B;
+    --color-text: #E2E8F0;
+    --color-text-secondary: #94A3B8;
+    --color-primary: #38BDF8;
+    --color-primary-hover: #0EA5E9;
+    --color-primary-focus: #0369A1;
+    --color-accent: #22D3EE;
+    --color-accent-hover: #06B6D4;
+    --color-border: #334155;
+    --color-muted: #64748B;
+    --color-link: #38BDF8;
+    --shadow: 0 4px 12px rgba(2, 6, 23, 0.4);
+    --navbar-bg: rgba(15, 23, 42, 0.6);
+    --navbar-text: var(--color-text);
+    --navbar-hover: var(--color-primary-hover);
+    --navbar-active: var(--color-primary);
+    --navbar-border: rgba(51, 65, 85, 0.7);
+}
+
+/* =========================================
+   🧩 BASE STYLES
+   ========================================= */
+@layer base {
+
+    html,
+    body {
+        @apply transition-colors duration-300 ease-in-out;
+        font-family: -apple-system, BlinkMacSystemFont, Inter, ui-sans-serif, system-ui, "Segoe UI",
+            Roboto, "Helvetica Neue", Arial;
+    }
+
+    body {
+        @apply bg-[var(--color-bg)] text-[var(--color-text)];
+    }
+
+    a {
+        @apply text-[var(--color-link)] hover:text-[var(--color-primary-hover)] transition-colors duration-200;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-semibold text-[var(--color-text)];
+    }
+
+    p {
+        @apply text-[var(--color-text-secondary)];
+    }
+
+    input, textarea, select {
+        @apply rounded-lg px-3 py-2 bg-[var(--color-card)] border border-[var(--color-border)] text-[var(--color-text)] placeholder-[var(--color-text-secondary)] outline-none transition-shadow duration-150;
+    }
+
+    input:focus, textarea:focus, select:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.08);
+        border-color: var(--color-primary);
+    }
+}
+
+/* =========================================
+   🔘 COMPONENTS
+   ========================================= */
+@layer components {
+    /* 🌟 Navbar styles */
+    .navbar {
+        background-color: var(--navbar-bg);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--navbar-border);
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-link {
+        color: var(--navbar-text);
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+
+    .nav-link:hover {
+        color: var(--navbar-hover);
+    }
+
+    .nav-link.active {
+        color: var(--navbar-active);
+        font-weight: 600;
+        position: relative;
+    }
+
+    .nav-link.active::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--navbar-active);
+        border-radius: 2px;
+    }
+
+    /* Buttons */
+    .btn {
+        @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium transition-transform duration-150 ease-in-out;
+    }
+
+    .btn-primary {
+        background-color: var(--color-primary);
+        color: #ffffff;
+        box-shadow: var(--shadow);
+    }
+
+    .btn-primary:hover {
+        background-color: var(--color-primary-hover);
+        transform: translateY(-1px);
+    }
+
+    .btn-primary:focus {
+        box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.12);
+    }
+
+    .btn-primary:active {
+        transform: translateY(0);
+    }
+
+    .btn-accent {
+        background-color: var(--color-accent);
+        color: #012027;
+    }
+
+    .btn-accent:hover {
+        background-color: var(--color-accent-hover);
+    }
+
+    .btn-outline {
+        background: transparent;
+        border: 1px solid var(--color-border);
+        color: var(--color-text);
+    }
+
+    .btn-outline:hover {
+        background-color: var(--color-bg-secondary);
+    }
+
+    .card {
+        background: var(--color-card);
+        border: 1px solid var(--color-border);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        box-shadow: var(--shadow);
+        transition: box-shadow 0.2s, transform 0.18s;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
+        transform: translateY(-4px);
+    }
+
+    .kbd {
+        @apply inline-block text-sm px-2 py-1 rounded bg-[var(--color-muted)] text-[var(--color-text)];
+    }
+}
+
+/* =========================================
+   🧠 UTILITIES
+   ========================================= */
+@layer utilities {
+    .text-muted {
+        color: var(--color-text-secondary);
+    }
+
+    .bg-muted {
+        background-color: var(--color-muted);
+    }
+
+    .border-default {
+        border-color: var(--color-border);
+    }
+
+    .bg-gradient-primary {
+        background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    }
+}
