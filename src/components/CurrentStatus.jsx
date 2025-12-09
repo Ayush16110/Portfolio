@@ -33,16 +33,16 @@ export default function CurrentStatus() {
 
         {/* Subtitle */}
         <p className="text-[var(--color-text-secondary)] mb-4">
-          Senior Frontend Developer at{" "}
+          Student at{" "}
           <span className="font-semibold text-[var(--color-text)]">
-            TechCorp Inc.
+            Galgotias College of Engineering and Technology
           </span>
         </p>
 
         {/* Description */}
         <p className="text-[var(--color-text-secondary)] leading-relaxed max-w-2xl mx-auto mb-6">
           Currently working on building scalable web applications using React,
-          TypeScript, and modern frontend tools. Always open to exciting
+          and modern frontend tools. Always open to exciting
           opportunities and collaborations.
         </p>
 
