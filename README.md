@@ -152,44 +152,6 @@ npm run preview
 
 ---
 
-## 🌍 Deployment Guide
-
-### 🚀 Deploy on Vercel (Recommended)
-1. Push your project to GitHub
-2. Go to https://vercel.com
-3. Import your repository
-4. Deploy instantly — Vercel auto-detects Vite
-
-### Other deployment options:
-- Netlify
-- GitHub Pages
-- Cloudflare Pages
-
----
-
-## 📸 Screenshots (Add Later)
-
-Recommended screenshots:
-```
-/screenshots/home-light.png
-/screenshots/home-dark.png
-/screenshots/projects.png
-```
-Insert them like:
-```md
-![Homepage](screenshots/home-light.png)
-```
-
----
-
-## 📌 Future Improvements
-- Add animations (Framer Motion / GSAP)
-- Add blog section
-- Add testimonials
-- Add project filtering
-- Improve accessibility (a11y)
-
----
 
 ## 🤝 Acknowledgements
 - Tailwind CSS
