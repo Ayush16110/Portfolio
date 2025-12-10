@@ -72,7 +72,12 @@
         @apply text-[var(--color-link)] hover:text-[var(--color-primary-hover)] transition-colors duration-200;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         @apply font-semibold text-[var(--color-text)];
     }
 
@@ -80,11 +85,15 @@
         @apply text-[var(--color-text-secondary)];
     }
 
-    input, textarea, select {
+    input,
+    textarea,
+    select {
         @apply rounded-lg px-3 py-2 bg-[var(--color-card)] border border-[var(--color-border)] text-[var(--color-text)] placeholder-[var(--color-text-secondary)] outline-none transition-shadow duration-150;
     }
 
-    input:focus, textarea:focus, select:focus {
+    input:focus,
+    textarea:focus,
+    select:focus {
         outline: none;
         box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.08);
         border-color: var(--color-primary);
@@ -95,6 +104,7 @@
    🔘 COMPONENTS
    ========================================= */
 @layer components {
+
     /* 🌟 Navbar styles */
     .navbar {
         background-color: var(--navbar-bg);
@@ -211,4 +221,15 @@
     .bg-gradient-primary {
         background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
     }
+
+    .skill-badge {
+        padding: 6px 16px;
+        border-radius: 9999px;
+        background: var(--color-bg-secondary);
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--color-text);
+        border: 1px solid var(--color-border);
+    }
+
 }
