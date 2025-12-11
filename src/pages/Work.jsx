@@ -1,6 +1,6 @@
 import React from 'react'
-import ProjectCard from '../components/Project Components/ProjectCard'
-import JourneyTimeline from '../components/About Components/JourneyTimeline'
+import ProjectCard from '../components/Project/ProjectCard'
+import JourneyTimeline from '../components/Project/JourneyTimeline'
 
 function Work() {
     return (

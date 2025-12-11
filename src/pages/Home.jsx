@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroSection from '../components/Home Components/HeroSection'
-import QuickAbout from '../components/Home Components/QuickAbout'
-import FeaturedProjects from '../components/Home Components/FeaturedProjects'
-import CurrentStatus from '../components/Home Components/CurrentStatus'
+import HeroSection from '../components/Home/HeroSection'
+import QuickAbout from '../components/Home/QuickAbout'
+import FeaturedProjects from '../components/Home/FeaturedProjects'
+import CurrentStatus from '../components/Home/CurrentStatus'
 
 function Home() {
     return (

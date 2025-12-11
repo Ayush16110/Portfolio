@@ -1,8 +1,7 @@
 import React from 'react'
-import BioCard from '../components/About Components/BioCard'
-import SkillsSection from '../components/About Components/SkillsSection'
-import JourneyTimeline from '../components/About Components/JourneyTimeline'
-import MoreAboutMe from '../components/About Components/MoreAbout'
+import BioCard from '../components/About/BioCard'
+import SkillsSection from '../components/About/SkillsSection'
+import MoreAboutMe from '../components/About/MoreAbout'
 
 function About() {
   return (
