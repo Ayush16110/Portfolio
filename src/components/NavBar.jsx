@@ -46,7 +46,7 @@ function NavBar() {
                     <ThemeSwitch />
                     <button className="btn btn-primary">
                         <img className="h-4 mr-2" src={download} alt="download icon" />
-                        Download CV
+                        Resume
                     </button>
 
                     {/* Hamburger */}

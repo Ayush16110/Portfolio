@@ -9,7 +9,7 @@ function About() {
     <div>
       <BioCard/>
       <SkillsSection/>
-      <JourneyTimeline/>
+      {/* <JourneyTimeline/> */}
       <MoreAboutMe/>
     </div>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SkillsSection() {
   return (
-    <section className="p-8">
+    <section className="px-8">
 
       {/* Section Title */}
       <h2 className="text-4xl font-bold text-center text-[var(--color-text)] mb-10">

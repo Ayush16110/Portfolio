@@ -15,7 +15,7 @@ export default function StepperTimeline() {
   ];
 
   return (
-    <section className="px-8 py-16">
+    <section className="py-16">
       <h2 className="text-4xl font-bold text-center text-[var(--color-text)] mb-12">
         My Journey
       </h2>
