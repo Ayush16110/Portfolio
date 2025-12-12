@@ -14,7 +14,7 @@ function Work() {
                 <ProjectCard
                     title="E-Commerce Cart"
                     description="A comprehensive online shopping platform cart, checkout system."
-                    image="../src/assets/ecommerce.jpg"
+                    image="/images/ecommerce.jpg"
                     tech={["HTML", "CSS", "JS"]}
                     codeLink="https://github.com/Ayush16110/mini-projects/tree/main/ecommerce-cart"
                     demoLink="https://ecommerce-demo.com"
@@ -23,7 +23,7 @@ function Work() {
                 <ProjectCard
                     title="Todo App"
                     description="Simple Todo to add, update, mark as done and delete tasks. Learned LocalStorage."
-                    image="../src/assets/todo.png"
+                    image="/images/todo.png"
                     tech={["HTML", "CSS", "JS", "LocalStorage"]}
                     codeLink="https://github.com/Ayush16110/mini-projects/tree/main/todo"
                     demoLink="https://taskapp-demo.com"
@@ -32,7 +32,7 @@ function Work() {
                 <ProjectCard
                     title="Weather App"
                     description="A simple weather application that fetches real-time temperature, humidity, and conditions using a public API."
-                    image="../src/assets/weather.png"
+                    image="/images/weather.png"
                     tech={["HTML", "CSS", "JS", "API"]}
                     codeLink="https://github.com/Ayush16110/mini-projects/tree/main/weather-app"
                     demoLink="https://weather-demo.com"
@@ -41,7 +41,7 @@ function Work() {
                 <ProjectCard
                     title="Expense Tracker"
                     description="A functional tool to track daily expenses, calculate totals, and store data using LocalStorage."
-                    image="../src/assets/expense.png"
+                    image="/images/expense.png"
                     tech={["HTML", "CSS", "JS"]}
                     codeLink="https://github.com/Ayush16110/mini-projects/tree/main/expense-tracker"
                     demoLink="https://expense-demo.com"
@@ -50,17 +50,17 @@ function Work() {
                 <ProjectCard
                     title="Quiz App"
                     description="An interactive quiz application with multiple-choice questions, score tracking, and final results."
-                    image="../src/assets/quiz.avif"
+                    image="/images/quiz.avif"
                     tech={["HTML", "CSS", "JS"]}
                     codeLink="https://github.com/Ayush16110/mini-projects/tree/main/quiz-app"
                     demoLink="https://quiz-demo.com"
                 />
 
 
+
             </div>
 
             <JourneyTimeline />
-
         </div>
     )
 }

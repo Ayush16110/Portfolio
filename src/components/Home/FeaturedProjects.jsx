@@ -7,7 +7,7 @@ const projects = [
     description:
       "A comprehensive online shopping platform cart, checkout system.",
     image:
-      "../src/assets/ecommerce.jpg",
+      "/images/ecommerce.jpg",
     tech: ["HTML", "CSS", "JS"],
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     description:
       "Simple Todo to add, update, mark as done and delete tasks.",
     image:
-      "../src/assets/todo.png",
+      "/images/todo.png",
     tech: ["HTML", "CSS", "JS"],
   },
 ];
