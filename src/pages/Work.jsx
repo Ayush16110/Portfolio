@@ -17,7 +17,7 @@ function Work() {
                     image="/images/ecommerce.jpg"
                     tech={["HTML", "CSS", "JS"]}
                     codeLink="https://github.com/Ayush16110/mini-projects/tree/main/ecommerce-cart"
-                    demoLink="https://ecommerce-demo.com"
+                    demoLink={null}
                 />
 
                 <ProjectCard
@@ -26,7 +26,7 @@ function Work() {
                     image="/images/todo.png"
                     tech={["HTML", "CSS", "JS", "LocalStorage"]}
                     codeLink="https://github.com/Ayush16110/mini-projects/tree/main/todo"
-                    demoLink="https://taskapp-demo.com"
+                    demoLink={null}
                 />
 
                 <ProjectCard
@@ -35,7 +35,7 @@ function Work() {
                     image="/images/weather.png"
                     tech={["HTML", "CSS", "JS", "API"]}
                     codeLink="https://github.com/Ayush16110/mini-projects/tree/main/weather-app"
-                    demoLink="https://weather-demo.com"
+                    demoLink={null}
                 />
 
                 <ProjectCard
@@ -44,7 +44,7 @@ function Work() {
                     image="/images/expense.png"
                     tech={["HTML", "CSS", "JS"]}
                     codeLink="https://github.com/Ayush16110/mini-projects/tree/main/expense-tracker"
-                    demoLink="https://expense-demo.com"
+                    demoLink={null}
                 />
 
                 <ProjectCard
@@ -53,7 +53,7 @@ function Work() {
                     image="/images/quiz.avif"
                     tech={["HTML", "CSS", "JS"]}
                     codeLink="https://github.com/Ayush16110/mini-projects/tree/main/quiz-app"
-                    demoLink="https://quiz-demo.com"
+                    demoLink={null}
                 />
 
 
