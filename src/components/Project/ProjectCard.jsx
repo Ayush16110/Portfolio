@@ -10,12 +10,15 @@ export default function ProjectCard({
 }) {
   return (
     <div className="bg-[var(--color-card)] border border-[var(--color-border)] 
-      rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 md:min-w-md max-w-xl mx-auto">
+      rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 max-w-xl mx-auto">
 
       {/* Image */}
       <img
         src={image}
         alt={title}
+        width="600"
+        height="340"
+        loading="lazy"
         className="w-full h-56 object-cover"
       />
 

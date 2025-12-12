@@ -23,6 +23,7 @@ function ThemeSwitch() {
     return (
         <div
             onClick={toggleTheme}
+            aria-label="Toggle dark mode"
             className='w-[40px] h-[40px] rounded-full hover:bg-[var(--color-accent)] transition-colors duration-200 flex justify-center items-center'
         >
             <img className={mode === "light" ? `` : `invert:`} src={mode === "light" ? moon : sun} alt="theme icon" />

@@ -3,20 +3,20 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "E-Commerce Cart",
     description:
-      "A full-featured online shopping platform with cart, checkout, and payment integration.",
+      "A comprehensive online shopping platform cart, checkout system.",
     image:
-      "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=900&q=60",
-    tech: ["React", "Tailwind CSS"],
+      "../src/assets/ecommerce.jpg",
+    tech: ["HTML", "CSS", "JS"],
   },
   {
-    title: "Task Management App",
+    title: "Todo App",
     description:
-      "Collaborative task manager with real-time updates and team features.",
+      "Simple Todo to add, update, mark as done and delete tasks.",
     image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=60",
-    tech: ["React", "Tailwind CSS"],
+      "../src/assets/todo.png",
+    tech: ["HTML", "CSS", "JS"],
   },
 ];
 
@@ -43,6 +43,9 @@ export default function FeaturedProjects() {
           >
             {/* Image */}
             <img
+              width="600"
+              height="340"
+              loading="lazy"
               src={project.image}
               alt={project.title}
               className="w-full h-[200px] object-cover"

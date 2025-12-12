@@ -44,10 +44,14 @@ function NavBar() {
                 {/* Right side */}
                 <div className="flex items-center gap-4">
                     <ThemeSwitch />
-                    <button className="btn btn-primary">
+                    <a
+                        href="/Ayush_Narayan_Gupta_Resume.pdf"
+                        download
+                        className="btn btn-primary inline-flex items-center"
+                    >
                         <img className="h-4 mr-2" src={download} alt="download icon" />
                         Resume
-                    </button>
+                    </a>
 
                     {/* Hamburger */}
                     <button
